@@ -1,0 +1,1 @@
+// definir un classe/objet qui représente une réservation. Par suite, ce classe est importé dans les autres scripts php
