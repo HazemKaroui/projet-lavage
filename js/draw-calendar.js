@@ -1,0 +1,1 @@
+// une fonction javascript qui prend la liste de réservations de get-reservations.php et dessiner le calendrier
