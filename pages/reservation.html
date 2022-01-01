@@ -1,40 +1,14 @@
+// page pour les clients
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site web</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Faire une réservation</title>
 </head>
 <body>
-<?php
- 
- class reservation {
-      
-     public $code;
-     public $debut;
-     public $fin;
-     public $type;
-     public $commentaire;
-     public $datecréation;
-     
- 
-      
-      
-     public function inserer() {
-  
-         $conn= new mysqli($servername,$username,$password,$data);
-      
-     $conn->exec("INSERT INTO reservation (code, debut,fin,type,commentaire,datecréation)
-     VALUES ('" . $this->code . "','" . $this->debut . "','" . $this ->fin . "','" . $this->type . "','" . $this->commentaire . "','" . $this->datecréation . "');
-     }  
- }
- ?>
 <div>
             <form method="POST" action="gestion-reservation.php">
             <p>
@@ -54,7 +28,7 @@
             <br>
              
                 <label for="commentaire"> Commentaire : </label> 
-                <input type="text" name="commentaire"placeholder="commentaire" size="35" maxlength="500" size="10"/>
+                <input type="text" name="commentaire"placeholder="commentaire" rows="5" cols="40"/>
             <br>
                 <label for="date-création"> date creation : </label> 
                 <input type="date" name="date-création"  placeholder="Date" size="35" maxlenght="100" /> 
