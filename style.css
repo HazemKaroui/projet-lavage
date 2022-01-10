@@ -1,0 +1,75 @@
+body {
+  background:url("tt.jpg");
+  color: #FFFFFF;
+  
+}
+.form {
+  margin: 60px auto;
+  text-align: center;
+}
+h1 {
+  text-decoration:none;
+  color:#5c7186
+}
+title {
+  color: #ece5e5;
+  background: #e7e7e7;
+  font-weight: 300;
+  padding: 15px 25px;
+  line-height: 30px;
+  font-size: 25px;
+  text-align:center;
+  margin: -27px -26px 26px;
+}
+legend{
+  color:#fff;
+}
+
+label , legend
+{
+  text-align:center;
+  margin-bottom:0px;
+  color: #dee5f3;
+  font-size: 25px;
+}
+.box-register a
+{
+  text-decoration:none;
+  font-size:12px;
+  color:#666;
+}
+input {
+  font-size: 18px;
+  background: rgb(165, 167, 179);
+  margin-bottom: 25px;
+  padding-left:10px;
+  height: 35px;
+  align-content: center;
+}
+
+.sucess{
+	text-align: center;
+	color: white;
+}
+.sucess a {
+	text-decoration: none;
+	color: #58aef7;
+}
+p.errorMessage {
+    background-color: #cebfbf;
+    border: #81716c 3px solid;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+.bu input{
+  display: flex;
+}
+td { 
+  font-size: 20px;
+  width: 10px;
+  border: #fff;
+}
+table{ 
+
+}
