@@ -40,7 +40,7 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="connexion.html">Se connecter</a>
+            <a class="nav-link" href="connexion.php">Se connecter</a>
 
           </li>
         </ul>
