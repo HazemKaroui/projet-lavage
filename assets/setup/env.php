@@ -5,7 +5,7 @@ if (!defined('APP_ORGANIZATION'))               define('APP_ORGANIZATION', 'poly
 if (!defined('APP_OWNER'))                      define('APP_OWNER', 'hazem');
 if (!defined('APP_DESCRIPTION'))                define('APP_DESCRIPTION', 'Plateforme de gestion de reservations pour les lavages');
 
-if (!defined('ALLOWED_INACTIVITY_TIME'))        define('ALLOWED_INACTIVITY_TIME', time()+1*60);
+if (!defined('ALLOWED_INACTIVITY_TIME'))        define('ALLOWED_INACTIVITY_TIME', time()+30*60);
 
 if (!defined('DB_DATABASE'))                    define('DB_DATABASE', 'lavage');
 if (!defined('DB_HOST'))                        define('DB_HOST','127.0.0.1');

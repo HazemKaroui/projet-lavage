@@ -17,13 +17,42 @@ check_verified();
         </div>
         <div class="col-sm-9">
 
-            <div class="d-flex align-items-center p-3 mt-5 mb-3 text-white-50 bg-purple rounded box-shadow">
-                <img class="mr-3" src="../assets/images/logonotextwhite.png" alt="" width="48" height="48">
-                <div class="lh-100">
-                    <h6 class="mb-0 text-white lh-100">Admin Dashboard</h6>
-                    <small>[Development in Progress]</small>
-                </div>
-            </div>
+        <form method="POST" >
+         <input type="submit" name="afficher" value="Affiche Réservation"> 
+    </form>
+        <?php
+           if(isset($_POST['afficher'])){ 
+                $sql ="SELECT * FROM `reservations` ";            
+                $res = mysqli_query($conn,$sql);    
+            }
+            $conn->close();        
+        ?>
+        <br> <br>
+        <fieldset>
+        <legend>Tableaux Reservations</legend>
+        <table width="1000px">
+            <tr  >
+                <td>Name</td>
+                <td>Email</td>
+                <td>Telefone</td>
+                <td>Notes</td>
+                <td>Date</td>
+                <td>Slot</td>
+            </tr>
+            <?php if(isset($_POST['afficher'])){
+            while($ligne= mysqli_fetch_array($res)) {?> 
+            <tr> 
+            <td> <?php echo $ligne['res_name']; ?> </td>
+            <td> <?php echo $ligne['res_email']; ?> </td>
+            <td> <?php echo $ligne['res_tel']; ?> </td>
+            <td> <?php echo $ligne['res_notes']; ?> </td>
+            <td> <?php echo $ligne['res_date']; ?> </td>
+            <td> <?php echo $ligne['res_slot']; ?> </td>
+            </tr>
+            <?php } }?>
+        </table>
+
+     </fieldset>
 
         </div>
     </div>
