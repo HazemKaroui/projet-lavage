@@ -191,7 +191,7 @@ else {
                         }
                     }
 
-                    header("Location: ../../home/");
+                    header("Location: ../../reservation/");
                     exit();
                 } 
             } 
